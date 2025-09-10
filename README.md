@@ -1,5 +1,9 @@
 # Claude Equity Research
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Claude Code Required](https://img.shields.io/badge/Claude_Code-Required-blue.svg)
+![Status: Active](https://img.shields.io/badge/Status-Active-green.svg)
+
 Professional equity research and trading analysis powered by Claude AI, delivering institutional-grade investment insights with Goldman Sachs-style formatting and comprehensive risk assessment.
 
 ## What It Does
