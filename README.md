@@ -1,8 +1,11 @@
 # Claude Equity Research
 
+[![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-blue?logo=anthropic&logoColor=white)](https://claude.ai/claude-code)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Claude Code Required](https://img.shields.io/badge/Claude_Code-Required-blue.svg)
 ![Status: Active](https://img.shields.io/badge/Status-Active-green.svg)
+
+>🤖 Built entirely with Claude Code - demonstrating AI-native development workflows for professional-grade financial tools.
 
 Professional equity research and trading analysis powered by Claude AI, delivering institutional-grade investment insights with Goldman Sachs-style formatting and comprehensive risk assessment.
 
