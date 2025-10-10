@@ -1,17 +1,25 @@
 {
-  "name": "claude-equity-research",
-  "description": "Institutional-grade equity research reports via /trading-ideas command. Analyzes company financials, technical indicators, market positioning, insider activity, and provides BUY/SELL/HOLD recommendations with price targets.",
-  "version": "1.0.0",
-  "author": "quant-sentiment-ai",
-  "repository": "https://github.com/quant-sentiment-ai/claude-equity-research",
-  "homepage": "https://github.com/quant-sentiment-ai/claude-equity-research",
-  "license": "MIT",
-  "commands": [
+  "name": "claude-equity-research-marketplace",
+  "owner": {
+    "name": "quant-sentiment-ai",
+    "email": "quant.sentiment.ai@gmail.com"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for professional equity research and financial analysis",
+    "version": "1.0.0",
+    "pluginRoot": "commands"
+  },
+  "plugins": [
     {
       "name": "trading-ideas",
-      "description": "Generate comprehensive institutional-grade equity research analysis for any stock ticker",
-      "usage": "/trading-ideas AAPL\n/trading-ideas NVDA --detailed"
+      "source": "commands/trading-ideas.md",
+      "description": "Institutional-grade equity research reports via /trading-ideas command. Analyzes company financials, technical indicators, market positioning, insider activity, and provides BUY/SELL/HOLD recommendations with price targets.",
+      "version": "1.0.0",
+      "author": {
+        "name": "quant-sentiment-ai",
+        "email": "quant.sentiment.ai@gmail.com"
+      },
+      "tags": ["finance", "equity-research", "trading", "stock-analysis", "investment", "fundamental-analysis", "technical-analysis", "ai-powered"]
     }
-  ],
-  "tags": ["finance", "equity-research", "trading", "stock-analysis", "investment", "fundamental-analysis", "technical-analysis", "ai-powered"]
+  ]
 }
