@@ -42,9 +42,46 @@ Professional equity research and trading analysis powered by Claude AI, deliveri
 ## Installation & Setup
 
 ### Prerequisites
-- Claude Code CLI (latest version)
+- Claude Code CLI (version 2.0.11 or higher)
+- Claude paid subscription (Pro, Team, or Enterprise)
 - Internet connection for real-time data retrieval
-- Basic familiarity with equity research concepts
+
+### Installation via Claude Code Plugin (Recommended)
+
+**Quick Install - Interactive Menu:**
+```bash
+# Step 1: Add the marketplace
+/plugin marketplace add quant-sentiment-ai/claude-equity-research
+
+# Step 2: Open the plugin menu
+/plugin
+
+# Step 3: Select "Browse Plugins" → find "claude-equity-research" → "Install now"
+```
+
+**Alternative - Direct Install:**
+```bash
+/plugin marketplace add quant-sentiment-ai/claude-equity-research
+/plugin install claude-equity-research@quant-sentiment-ai
+```
+
+**Verify Installation:**
+```bash
+/help  # Confirm /trading-ideas command is listed
+```
+
+**Start Analyzing:**
+```bash
+/trading-ideas AAPL
+/trading-ideas NVDA --detailed
+```
+
+> 💡 **Tip**: Restart Claude Code after installation for best results.
+
+For comprehensive plugin documentation, see [PLUGIN.md](PLUGIN.md).
+
+<details>
+<summary><strong>Manual Installation (Advanced)</strong></summary>
 
 ### Quick Start
 
@@ -64,7 +101,7 @@ curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/qu
 /trading-ideas HOOD --detailed
 ```
 
-### Manual Setup
+### Manual Setup via Git Clone
 
 1. **Clone the repository**:
 ```bash
@@ -76,6 +113,8 @@ cd claude-equity-research
 ```bash
 cp commands/trading-ideas.md ~/.claude/commands/
 ```
+
+</details>
 
 ## Usage Examples
 
