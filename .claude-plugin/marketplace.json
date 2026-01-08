@@ -12,7 +12,7 @@
   "plugins": [
     {
       "name": "trading-ideas",
-      "source": "./commands/trading-ideas.md",
+      "source": "./trading-ideas.md",
       "description": "Institutional-grade equity research reports via /trading-ideas command. Analyzes company financials, technical indicators, market positioning, insider activity, and provides BUY/SELL/HOLD recommendations with price targets.",
       "version": "1.0.0",
       "author": {
