@@ -272,6 +272,10 @@ git checkout -b feature/your-enhancement
 # Submit pull request with detailed description
 ```
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=quant-sentiment-ai/claude-equity-research&type=date&legend=top-left)](https://www.star-history.com/#quant-sentiment-ai/claude-equity-research&type=date&legend=top-left)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
