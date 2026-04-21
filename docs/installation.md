@@ -7,7 +7,7 @@ Complete setup instructions for Claude Equity Research integration with Claude C
 ### Option 1: Direct Download (Recommended)
 ```bash
 # Install the trading-ideas command system-wide
-curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas.md
+curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas/commands/research.md
 
 # Verify installation
 ls ~/.claude/commands/trading-ideas.md
@@ -23,7 +23,7 @@ git clone https://github.com/quant-sentiment-ai/claude-equity-research.git
 cd claude-equity-research
 
 # Copy command to Claude Code
-cp commands/trading-ideas.md ~/.claude/commands/
+cp commands/trading-ideas/commands/research.md ~/.claude/commands/trading-ideas.md
 
 # Optional: Set up development environment
 cp config/config.example.json config/config.json
@@ -125,7 +125,7 @@ vim ~/.claude/equity-research/config.json
 ls -la ~/.claude/commands/trading-ideas.md
 
 # If missing, reinstall
-curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas.md
+curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas/commands/research.md
 
 # Check file permissions
 chmod 644 ~/.claude/commands/trading-ideas.md
@@ -160,7 +160,7 @@ claude-code --version
 
 ```bash
 # Restore default command
-curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas.md
+curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas/commands/research.md
 
 # Start fresh session
 exit  # Exit current Claude Code session
@@ -172,7 +172,7 @@ claude-code  # Start new session
 ### Manual Update
 ```bash
 # Download latest version
-curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas.md
+curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas/commands/research.md
 
 # Verify update
 head -10 ~/.claude/commands/trading-ideas.md
@@ -182,7 +182,7 @@ head -10 ~/.claude/commands/trading-ideas.md
 ```bash
 cd claude-equity-research
 git pull origin main
-cp commands/trading-ideas.md ~/.claude/commands/
+cp commands/trading-ideas/commands/research.md ~/.claude/commands/trading-ideas.md
 ```
 
 ### Version Check
@@ -196,18 +196,18 @@ grep -i "version\|updated" ~/.claude/commands/trading-ideas.md
 ### Multiple Environments
 ```bash
 # Development setup
-cp commands/trading-ideas.md ~/.claude/commands/trading-ideas-dev.md
+cp commands/trading-ideas/commands/research.md ~/.claude/commands/trading-ideas-dev.md
 # Edit development version...
 
 # Production setup  
-cp commands/trading-ideas.md ~/.claude/commands/trading-ideas.md
+cp commands/trading-ideas/commands/research.md ~/.claude/commands/trading-ideas.md
 ```
 
 ### Custom Analysis Templates
 ```bash
 # Create custom sector-specific commands
-cp commands/trading-ideas.md ~/.claude/commands/tech-analysis.md
-cp commands/trading-ideas.md ~/.claude/commands/biotech-analysis.md
+cp commands/trading-ideas/commands/research.md ~/.claude/commands/tech-analysis.md
+cp commands/trading-ideas/commands/research.md ~/.claude/commands/biotech-analysis.md
 
 # Customize each for sector-specific metrics
 ```
