@@ -6,7 +6,7 @@ This directory contains the core `/trading-ideas` command for Claude Code integr
 
 ### Quick Installation (Recommended)
 ```bash
-curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas.md
+curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas/commands/research.md
 ```
 
 ### Manual Installation
@@ -15,7 +15,7 @@ curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/qu
 git clone https://github.com/quant-sentiment-ai/claude-equity-research.git
 
 # Copy command to Claude Code
-cp claude-equity-research/commands/trading-ideas.md ~/.claude/commands/
+cp claude-equity-research/commands/trading-ideas/commands/research.md ~/.claude/commands/trading-ideas.md
 ```
 
 ## Usage
@@ -88,7 +88,7 @@ To update the command with latest improvements:
 
 ```bash
 # Download latest version
-curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas.md
+curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas/commands/research.md
 
 # Verify update
 head -10 ~/.claude/commands/trading-ideas.md

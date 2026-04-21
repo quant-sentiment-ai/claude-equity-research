@@ -44,7 +44,7 @@ The **Claude Equity Research** plugin brings institutional-grade equity analysis
 ```bash
 # Add marketplace and install in one flow
 /plugin marketplace add quant-sentiment-ai/claude-equity-research
-/plugin install claude-equity-research@quant-sentiment-ai
+/plugin install trading-ideas@claude-equity-research-marketplace
 ```
 
 ### Verify Installation
@@ -53,10 +53,10 @@ The **Claude Equity Research** plugin brings institutional-grade equity analysis
 # Check that the command is available
 /help
 
-# You should see "/trading-ideas" in the command list
+# You should see "/trading-ideas:research" in the command list
 
 # Test the plugin
-/trading-ideas AAPL
+/trading-ideas:research AAPL
 ```
 
 ### Post-Installation
@@ -67,13 +67,15 @@ Restart Claude Code for optimal performance (recommended but not required).
 
 ## Commands
 
-### `/trading-ideas [TICKER]`
+### `/trading-ideas:research [TICKER]`
 
 Generate a comprehensive institutional-grade equity research report for any publicly traded stock.
 
+> **Note on invocation**: Claude Code namespaces plugin commands as `<plugin-name>:<command-name>`, so the full command is `/trading-ideas:research`. The bare `/trading-ideas` does **not** work when installed via the plugin.
+
 **Syntax:**
 ```bash
-/trading-ideas <TICKER> [--detailed]
+/trading-ideas:research <TICKER> [--detailed]
 ```
 
 **Parameters:**
@@ -102,31 +104,31 @@ Generate a comprehensive institutional-grade equity research report for any publ
 
 ### Technology Stock Analysis
 ```bash
-/trading-ideas NVDA
+/trading-ideas:research NVDA
 ```
 **Use Case**: Analyze NVIDIA's AI chip business, competitive positioning vs AMD/Intel, and valuation relative to growth prospects.
 
 ### Financial Services Analysis
 ```bash
-/trading-ideas JPM
+/trading-ideas:research JPM
 ```
 **Use Case**: Evaluate J.P. Morgan's earnings power, interest rate sensitivity, book value, and regulatory environment.
 
 ### Growth Stock Evaluation
 ```bash
-/trading-ideas TSLA
+/trading-ideas:research TSLA
 ```
 **Use Case**: Assess Tesla's automotive and energy businesses, execution risks, valuation premium, and competitive threats.
 
 ### Biotech/Pharma Research
 ```bash
-/trading-ideas PFE
+/trading-ideas:research PFE
 ```
 **Use Case**: Review pipeline, patent cliffs, R&D productivity, and regulatory risks for Pfizer.
 
 ### Detailed Analysis with Options Flow
 ```bash
-/trading-ideas AAPL --detailed
+/trading-ideas:research AAPL --detailed
 ```
 **Use Case**: Enhanced report with options market sentiment, unusual activity, and institutional positioning signals.
 
@@ -253,13 +255,13 @@ When team members trust the repository folder, Claude Code will automatically pr
 
 ### Plugin Not Found After Installation
 
-**Problem**: `/trading-ideas` command not recognized after installation.
+**Problem**: `/trading-ideas:research` command not recognized after installation.
 
 **Solutions:**
 1. Restart Claude Code (recommended)
 2. Verify installation: `/plugin marketplace list`
 3. Check plugin is enabled: `/plugin`
-4. Reinstall: `/plugin uninstall claude-equity-research@quant-sentiment-ai` then `/plugin install claude-equity-research@quant-sentiment-ai`
+4. Reinstall: `/plugin uninstall trading-ideas@claude-equity-research-marketplace` then `/plugin install trading-ideas@claude-equity-research-marketplace`
 
 ### Limited Data for Small-Cap Stocks
 
@@ -307,22 +309,22 @@ When team members trust the repository folder, Claude Code will automatically pr
 
 ### Enable/Disable Plugin
 ```bash
-/plugin enable claude-equity-research@quant-sentiment-ai
-/plugin disable claude-equity-research@quant-sentiment-ai
+/plugin enable trading-ideas@claude-equity-research-marketplace
+/plugin disable trading-ideas@claude-equity-research-marketplace
 ```
 
 ### Uninstall Plugin
 ```bash
-/plugin uninstall claude-equity-research@quant-sentiment-ai
+/plugin uninstall trading-ideas@claude-equity-research-marketplace
 ```
 
 ### Update Plugin
 ```bash
 # Uninstall old version
-/plugin uninstall claude-equity-research@quant-sentiment-ai
+/plugin uninstall trading-ideas@claude-equity-research-marketplace
 
 # Reinstall latest version
-/plugin install claude-equity-research@quant-sentiment-ai
+/plugin install trading-ideas@claude-equity-research-marketplace
 ```
 
 ---
@@ -412,7 +414,12 @@ We welcome contributions! See [Contributing Guidelines](https://github.com/quant
 
 ## Version History
 
-### 1.0.0 (Current)
+### 1.0.1 (Current)
+- Fix plugin command registration (the command is now loaded by the plugin system, not just via manual install)
+- Rename command file to `research.md` so the invocation reads `/trading-ideas:research TICKER` instead of the doubled `/trading-ideas:trading-ideas`
+- Fix incorrect install command in docs (`claude-equity-research@quant-sentiment-ai` → `trading-ideas@claude-equity-research-marketplace`)
+
+### 1.0.0
 - Initial public release
 - `/trading-ideas` command with standard and `--detailed` modes
 - 8-section institutional research framework

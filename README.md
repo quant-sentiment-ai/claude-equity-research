@@ -62,19 +62,21 @@ Professional equity research and trading analysis powered by Claude AI, deliveri
 **Alternative - Direct Install:**
 ```bash
 /plugin marketplace add quant-sentiment-ai/claude-equity-research
-/plugin install claude-equity-research@quant-sentiment-ai
+/plugin install trading-ideas@claude-equity-research-marketplace
 ```
 
 **Verify Installation:**
 ```bash
-/help  # Confirm /trading-ideas command is listed
+/help  # Confirm /trading-ideas:research command is listed
 ```
 
 **Start Analyzing:**
 ```bash
-/trading-ideas AAPL
-/trading-ideas NVDA --detailed
+/trading-ideas:research AAPL
+/trading-ideas:research NVDA --detailed
 ```
+
+> Claude Code namespaces plugin commands as `<plugin-name>:<command-name>`, so the invocation is `/trading-ideas:research` (not the bare `/trading-ideas`). If you prefer the bare form, use the [manual install](#manual-installation-advanced) below — it copies the command file into your personal `~/.claude/commands/` and registers it as `/trading-ideas`.
 
 > 💡 **Tip**: Restart Claude Code after installation for best results.
 
@@ -88,7 +90,7 @@ For comprehensive plugin documentation, see [PLUGIN.md](PLUGIN.md).
 1. **Install the /trading-ideas command** (system-wide):
 ```bash
 mkdir -p ~/.claude/commands
-curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas.md
+curl -o ~/.claude/commands/trading-ideas.md https://raw.githubusercontent.com/quant-sentiment-ai/claude-equity-research/main/commands/trading-ideas/commands/research.md
 ```
 
 2. **Basic usage**:
@@ -111,34 +113,36 @@ cd claude-equity-research
 
 2. **Copy command to Claude Code**:
 ```bash
-cp commands/trading-ideas.md ~/.claude/commands/
+cp commands/trading-ideas/commands/research.md ~/.claude/commands/trading-ideas.md
 ```
 
 </details>
 
 ## Usage Examples
 
+> Examples below use the plugin install invocation (`/trading-ideas:research`). If you followed the manual install path, drop the `:research` suffix and use the bare `/trading-ideas` form.
+
 ### Basic Equity Analysis
 ```bash
-/trading-ideas AAPL
+/trading-ideas:research AAPL
 ```
 **Output**: Comprehensive institutional research report with BUY/SELL/HOLD recommendation
 
 ### Technology Sector Analysis
 ```bash
-/trading-ideas NVDA
+/trading-ideas:research NVDA
 ```
 **Features**: AI/semiconductor sector positioning, relative valuation vs peers
 
 ### Financial Services Analysis
 ```bash
-/trading-ideas JPM
+/trading-ideas:research JPM
 ```
 **Includes**: Interest rate sensitivity, regulatory environment, book value analysis
 
 ### Growth Stock Analysis
 ```bash
-/trading-ideas TSLA
+/trading-ideas:research TSLA
 ```
 **Focus**: Growth metrics, competitive positioning, volatility assessment
 
@@ -168,9 +172,9 @@ Probability weighting: 25%/55%/20%
 
 | Command | Description | Output |
 |---------|-------------|---------|
-| `/trading-ideas <TICKER>` | Standard institutional analysis | 8-section comprehensive report |
-| `/trading-ideas <TICKER> --detailed` | Enhanced analysis with options flow | Extended technical and insider analysis |
-| `/trading-ideas --help` | Show usage information | Command documentation |
+| `/trading-ideas:research <TICKER>` | Standard institutional analysis | 8-section comprehensive report |
+| `/trading-ideas:research <TICKER> --detailed` | Enhanced analysis with options flow | Extended technical and insider analysis |
+| `/trading-ideas:research --help` | Show usage information | Command documentation |
 
 ## Repository Structure
 
@@ -179,7 +183,11 @@ claude-equity-research/
 ├── README.md                     # This file
 ├── LICENSE                       # MIT License
 ├── commands/
-│   ├── trading-ideas.md          # Main Claude Code command
+│   ├── trading-ideas/            # Plugin directory (installed via marketplace)
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json       # Plugin manifest
+│   │   └── commands/
+│   │       └── research.md       # Slash command (invoked as /trading-ideas:research)
 │   └── README.md                 # Command documentation
 ├── config/
 │   ├── config.example.json       # Template configuration

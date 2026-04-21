@@ -13,8 +13,8 @@
     {
       "name": "trading-ideas",
       "source": "./commands/trading-ideas",
-      "description": "Institutional-grade equity research reports via /trading-ideas command. Analyzes company financials, technical indicators, market positioning, insider activity, and provides BUY/SELL/HOLD recommendations with price targets.",
-      "version": "1.0.0",
+      "description": "Institutional-grade equity research reports via /trading-ideas:research command. Analyzes company financials, technical indicators, market positioning, insider activity, and provides BUY/SELL/HOLD recommendations with price targets.",
+      "version": "1.0.1",
       "author": {
         "name": "quant-sentiment-ai",
         "email": "quant.sentiment.ai@gmail.com"
