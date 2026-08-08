@@ -1,5 +1,8 @@
 # Claude Equity Research
 
+**by [carolinacherry](https://github.com/carolinacherry)**
+
+[![Author: carolinacherry](https://img.shields.io/badge/by-carolinacherry-181717?logo=github&logoColor=white)](https://github.com/carolinacherry)
 [![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-blue?logo=anthropic&logoColor=white)](https://claude.ai/claude-code)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Claude Code Required](https://img.shields.io/badge/Claude_Code-Required-blue.svg)
@@ -294,6 +297,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 🐛 [Report Issues](https://github.com/quant-sentiment-ai/claude-equity-research/issues)
 - 💬 [Discussions](https://github.com/quant-sentiment-ai/claude-equity-research/discussions)
 - 🔄 [Changelog](CHANGELOG.md)
+
+## Author
+
+Created and maintained by **[carolinacherry](https://github.com/carolinacherry)**.
 
 ## Acknowledgments
 
