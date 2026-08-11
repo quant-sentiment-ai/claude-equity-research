@@ -1,0 +1,64 @@
+name: star-history
+
+# Refreshes .github/star-history/chart.svg from the stargazers API.
+#
+# DORMANT UNTIL A SECRET IS ADDED. GitHub restricted /stargazers to repo
+# admins and collaborators on 2026-06-30, and the built-in GITHUB_TOKEN does
+# not satisfy that check — it is a GitHub App installation token and gets
+# "403 Resource not accessible by integration" even with permissions: read-all
+# (verified 2026-08-11). A user-owned token is the only thing that works.
+#
+# To enable:
+#   1. As a repo admin or collaborator, create a fine-grained PAT with
+#      read access to this repository.
+#   2. Settings -> Secrets and variables -> Actions -> New repository secret
+#      Name: STAR_HISTORY_TOKEN
+#   3. Nothing else. The job skips itself until that secret exists, so it
+#      never reports a failure in the meantime.
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"   # Mondays, 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Skip if no token configured
+        id: gate
+        env:
+          TOKEN: ${{ secrets.STAR_HISTORY_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "STAR_HISTORY_TOKEN is not set — nothing to do."
+            echo "See the header of this workflow file to enable."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Regenerate chart
+        if: steps.gate.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.STAR_HISTORY_TOKEN }}
+        run: python3 scripts/update-star-history.py
+
+      - name: Commit if changed
+        if: steps.gate.outputs.ready == 'true'
+        run: |
+          if git diff --quiet -- .github/star-history; then
+            echo "No change in star history."
+            exit 0
+          fi
+          total=$(python3 -c "import json;print(json.load(open('.github/star-history/stars.json'))['total'])")
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/star-history
+          git commit -m "Update star history chart (${total} stars)"
+          git push

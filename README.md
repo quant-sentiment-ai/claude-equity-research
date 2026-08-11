@@ -285,7 +285,9 @@ git checkout -b feature/your-enhancement
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=quant-sentiment-ai/claude-equity-research&type=date&legend=top-left)](https://www.star-history.com/#quant-sentiment-ai/claude-equity-research&type=date&legend=top-left)
+![Star History Chart](.github/star-history/chart.svg)
+
+<sub>Generated from this repo's own stargazer data — [GitHub restricted the public stargazer API](https://github.blog/changelog/2026-06-30-upcoming-access-restrictions-to-public-api-endpoints-and-ui-views/) on 2026-06-30, which broke third-party star-history charts everywhere. Refresh with `python3 scripts/update-star-history.py`.</sub>
 
 ## License
 
