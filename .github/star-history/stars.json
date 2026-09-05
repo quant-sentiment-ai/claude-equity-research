@@ -3,7 +3,7 @@
   "generated_from": "GET /repos/{owner}/{repo}/stargazers (collaborator access)",
   "total": 710,
   "first_star": "2025-09-10T18:30:33Z",
-  "last_star": "2026-09-03T16:27:29Z",
+  "last_star": "2026-09-05T05:33:19Z",
   "series": [
     {
       "date": "2025-09-10",
@@ -835,610 +835,618 @@
     },
     {
       "date": "2026-04-05",
-      "stars": 409
+      "stars": 408
     },
     {
       "date": "2026-04-06",
-      "stars": 410
+      "stars": 409
     },
     {
       "date": "2026-04-07",
-      "stars": 413
+      "stars": 412
     },
     {
       "date": "2026-04-08",
-      "stars": 413
+      "stars": 412
     },
     {
       "date": "2026-04-09",
-      "stars": 416
+      "stars": 415
     },
     {
       "date": "2026-04-10",
-      "stars": 420
+      "stars": 419
     },
     {
       "date": "2026-04-11",
-      "stars": 422
+      "stars": 421
     },
     {
       "date": "2026-04-12",
-      "stars": 426
+      "stars": 425
     },
     {
       "date": "2026-04-13",
-      "stars": 426
+      "stars": 425
     },
     {
       "date": "2026-04-14",
-      "stars": 430
+      "stars": 429
     },
     {
       "date": "2026-04-15",
-      "stars": 431
+      "stars": 430
     },
     {
       "date": "2026-04-16",
-      "stars": 432
+      "stars": 431
     },
     {
       "date": "2026-04-17",
-      "stars": 432
+      "stars": 431
     },
     {
       "date": "2026-04-18",
-      "stars": 433
+      "stars": 432
     },
     {
       "date": "2026-04-19",
-      "stars": 434
+      "stars": 433
     },
     {
       "date": "2026-04-20",
-      "stars": 439
+      "stars": 438
     },
     {
       "date": "2026-04-21",
-      "stars": 440
+      "stars": 439
     },
     {
       "date": "2026-04-22",
-      "stars": 443
+      "stars": 442
     },
     {
       "date": "2026-04-23",
-      "stars": 446
+      "stars": 445
     },
     {
       "date": "2026-04-24",
-      "stars": 447
+      "stars": 446
     },
     {
       "date": "2026-04-25",
-      "stars": 450
+      "stars": 449
     },
     {
       "date": "2026-04-26",
-      "stars": 452
+      "stars": 451
     },
     {
       "date": "2026-04-27",
-      "stars": 457
+      "stars": 456
     },
     {
       "date": "2026-04-28",
-      "stars": 461
+      "stars": 460
     },
     {
       "date": "2026-04-29",
-      "stars": 463
+      "stars": 462
     },
     {
       "date": "2026-04-30",
-      "stars": 468
+      "stars": 467
     },
     {
       "date": "2026-05-01",
-      "stars": 469
+      "stars": 468
     },
     {
       "date": "2026-05-02",
-      "stars": 472
+      "stars": 471
     },
     {
       "date": "2026-05-03",
-      "stars": 473
+      "stars": 472
     },
     {
       "date": "2026-05-04",
-      "stars": 474
+      "stars": 473
     },
     {
       "date": "2026-05-05",
-      "stars": 476
+      "stars": 475
     },
     {
       "date": "2026-05-06",
-      "stars": 479
+      "stars": 478
     },
     {
       "date": "2026-05-07",
-      "stars": 483
+      "stars": 482
     },
     {
       "date": "2026-05-08",
-      "stars": 488
+      "stars": 487
     },
     {
       "date": "2026-05-09",
-      "stars": 493
+      "stars": 492
     },
     {
       "date": "2026-05-10",
-      "stars": 496
+      "stars": 495
     },
     {
       "date": "2026-05-11",
-      "stars": 497
+      "stars": 496
     },
     {
       "date": "2026-05-12",
-      "stars": 501
+      "stars": 500
     },
     {
       "date": "2026-05-13",
-      "stars": 504
+      "stars": 503
     },
     {
       "date": "2026-05-14",
-      "stars": 506
+      "stars": 505
     },
     {
       "date": "2026-05-15",
-      "stars": 506
+      "stars": 505
     },
     {
       "date": "2026-05-16",
-      "stars": 509
+      "stars": 508
     },
     {
       "date": "2026-05-17",
-      "stars": 510
+      "stars": 509
     },
     {
       "date": "2026-05-18",
-      "stars": 512
+      "stars": 511
     },
     {
       "date": "2026-05-19",
-      "stars": 513
+      "stars": 512
     },
     {
       "date": "2026-05-20",
-      "stars": 513
+      "stars": 512
     },
     {
       "date": "2026-05-21",
-      "stars": 515
+      "stars": 514
     },
     {
       "date": "2026-05-22",
-      "stars": 520
+      "stars": 519
     },
     {
       "date": "2026-05-23",
-      "stars": 523
+      "stars": 522
     },
     {
       "date": "2026-05-24",
-      "stars": 524
+      "stars": 523
     },
     {
       "date": "2026-05-25",
-      "stars": 527
+      "stars": 526
     },
     {
       "date": "2026-05-26",
-      "stars": 529
+      "stars": 528
     },
     {
       "date": "2026-05-27",
-      "stars": 535
+      "stars": 534
     },
     {
       "date": "2026-05-28",
-      "stars": 535
+      "stars": 534
     },
     {
       "date": "2026-05-29",
-      "stars": 538
+      "stars": 537
     },
     {
       "date": "2026-05-30",
-      "stars": 540
+      "stars": 539
     },
     {
       "date": "2026-05-31",
-      "stars": 542
+      "stars": 541
     },
     {
       "date": "2026-06-01",
-      "stars": 543
+      "stars": 542
     },
     {
       "date": "2026-06-02",
-      "stars": 547
+      "stars": 546
     },
     {
       "date": "2026-06-03",
-      "stars": 550
+      "stars": 549
     },
     {
       "date": "2026-06-04",
-      "stars": 551
+      "stars": 550
     },
     {
       "date": "2026-06-05",
-      "stars": 553
+      "stars": 552
     },
     {
       "date": "2026-06-06",
-      "stars": 554
+      "stars": 553
     },
     {
       "date": "2026-06-07",
-      "stars": 557
+      "stars": 556
     },
     {
       "date": "2026-06-08",
-      "stars": 557
+      "stars": 556
     },
     {
       "date": "2026-06-09",
-      "stars": 560
+      "stars": 559
     },
     {
       "date": "2026-06-10",
-      "stars": 561
+      "stars": 560
     },
     {
       "date": "2026-06-11",
-      "stars": 562
+      "stars": 561
     },
     {
       "date": "2026-06-12",
-      "stars": 563
+      "stars": 562
     },
     {
       "date": "2026-06-13",
-      "stars": 565
+      "stars": 564
     },
     {
       "date": "2026-06-14",
-      "stars": 568
+      "stars": 567
     },
     {
       "date": "2026-06-15",
-      "stars": 569
+      "stars": 568
     },
     {
       "date": "2026-06-16",
-      "stars": 570
+      "stars": 569
     },
     {
       "date": "2026-06-17",
-      "stars": 572
+      "stars": 571
     },
     {
       "date": "2026-06-18",
-      "stars": 575
+      "stars": 574
     },
     {
       "date": "2026-06-19",
-      "stars": 575
+      "stars": 574
     },
     {
       "date": "2026-06-20",
-      "stars": 577
+      "stars": 576
     },
     {
       "date": "2026-06-21",
-      "stars": 579
+      "stars": 578
     },
     {
       "date": "2026-06-22",
-      "stars": 583
+      "stars": 582
     },
     {
       "date": "2026-06-23",
-      "stars": 583
+      "stars": 582
     },
     {
       "date": "2026-06-24",
-      "stars": 583
+      "stars": 582
     },
     {
       "date": "2026-06-25",
-      "stars": 585
+      "stars": 584
     },
     {
       "date": "2026-06-26",
-      "stars": 590
+      "stars": 589
     },
     {
       "date": "2026-06-27",
-      "stars": 593
+      "stars": 592
     },
     {
       "date": "2026-06-28",
-      "stars": 601
+      "stars": 600
     },
     {
       "date": "2026-06-29",
-      "stars": 607
+      "stars": 606
     },
     {
       "date": "2026-06-30",
-      "stars": 608
+      "stars": 607
     },
     {
       "date": "2026-07-01",
-      "stars": 611
+      "stars": 610
     },
     {
       "date": "2026-07-02",
-      "stars": 612
+      "stars": 611
     },
     {
       "date": "2026-07-03",
-      "stars": 618
+      "stars": 617
     },
     {
       "date": "2026-07-04",
-      "stars": 621
+      "stars": 620
     },
     {
       "date": "2026-07-05",
-      "stars": 623
+      "stars": 622
     },
     {
       "date": "2026-07-06",
-      "stars": 627
+      "stars": 626
     },
     {
       "date": "2026-07-07",
-      "stars": 629
+      "stars": 628
     },
     {
       "date": "2026-07-08",
-      "stars": 633
+      "stars": 632
     },
     {
       "date": "2026-07-09",
-      "stars": 634
+      "stars": 633
     },
     {
       "date": "2026-07-10",
-      "stars": 634
+      "stars": 633
     },
     {
       "date": "2026-07-11",
-      "stars": 635
+      "stars": 634
     },
     {
       "date": "2026-07-12",
-      "stars": 635
+      "stars": 634
     },
     {
       "date": "2026-07-13",
-      "stars": 637
+      "stars": 636
     },
     {
       "date": "2026-07-14",
-      "stars": 638
+      "stars": 637
     },
     {
       "date": "2026-07-15",
-      "stars": 640
+      "stars": 639
     },
     {
       "date": "2026-07-16",
-      "stars": 641
+      "stars": 640
     },
     {
       "date": "2026-07-17",
-      "stars": 641
+      "stars": 640
     },
     {
       "date": "2026-07-18",
-      "stars": 641
+      "stars": 640
     },
     {
       "date": "2026-07-19",
-      "stars": 643
+      "stars": 642
     },
     {
       "date": "2026-07-20",
-      "stars": 644
+      "stars": 643
     },
     {
       "date": "2026-07-21",
-      "stars": 644
+      "stars": 643
     },
     {
       "date": "2026-07-22",
-      "stars": 644
+      "stars": 643
     },
     {
       "date": "2026-07-23",
-      "stars": 644
+      "stars": 643
     },
     {
       "date": "2026-07-24",
-      "stars": 644
+      "stars": 643
     },
     {
       "date": "2026-07-25",
-      "stars": 645
+      "stars": 644
     },
     {
       "date": "2026-07-26",
-      "stars": 645
+      "stars": 644
     },
     {
       "date": "2026-07-27",
-      "stars": 647
+      "stars": 646
     },
     {
       "date": "2026-07-28",
-      "stars": 648
+      "stars": 647
     },
     {
       "date": "2026-07-29",
-      "stars": 648
+      "stars": 647
     },
     {
       "date": "2026-07-30",
-      "stars": 650
+      "stars": 649
     },
     {
       "date": "2026-07-31",
-      "stars": 651
+      "stars": 650
     },
     {
       "date": "2026-08-01",
-      "stars": 652
+      "stars": 651
     },
     {
       "date": "2026-08-02",
-      "stars": 653
+      "stars": 652
     },
     {
       "date": "2026-08-03",
-      "stars": 653
+      "stars": 652
     },
     {
       "date": "2026-08-04",
-      "stars": 654
+      "stars": 653
     },
     {
       "date": "2026-08-05",
-      "stars": 656
+      "stars": 655
     },
     {
       "date": "2026-08-06",
-      "stars": 656
+      "stars": 655
     },
     {
       "date": "2026-08-07",
-      "stars": 657
+      "stars": 656
     },
     {
       "date": "2026-08-08",
-      "stars": 659
+      "stars": 658
     },
     {
       "date": "2026-08-09",
-      "stars": 671
+      "stars": 670
     },
     {
       "date": "2026-08-10",
-      "stars": 687
+      "stars": 686
     },
     {
       "date": "2026-08-11",
-      "stars": 687
+      "stars": 686
     },
     {
       "date": "2026-08-12",
-      "stars": 688
+      "stars": 687
     },
     {
       "date": "2026-08-13",
-      "stars": 689
+      "stars": 688
     },
     {
       "date": "2026-08-14",
-      "stars": 690
+      "stars": 689
     },
     {
       "date": "2026-08-15",
-      "stars": 690
+      "stars": 689
     },
     {
       "date": "2026-08-16",
-      "stars": 692
+      "stars": 691
     },
     {
       "date": "2026-08-17",
-      "stars": 694
+      "stars": 693
     },
     {
       "date": "2026-08-18",
-      "stars": 695
+      "stars": 694
     },
     {
       "date": "2026-08-19",
-      "stars": 696
+      "stars": 695
     },
     {
       "date": "2026-08-20",
-      "stars": 700
+      "stars": 699
     },
     {
       "date": "2026-08-21",
-      "stars": 700
+      "stars": 699
     },
     {
       "date": "2026-08-22",
-      "stars": 701
+      "stars": 700
     },
     {
       "date": "2026-08-23",
-      "stars": 703
+      "stars": 702
     },
     {
       "date": "2026-08-24",
-      "stars": 704
+      "stars": 703
     },
     {
       "date": "2026-08-25",
-      "stars": 705
+      "stars": 704
     },
     {
       "date": "2026-08-26",
-      "stars": 705
+      "stars": 704
     },
     {
       "date": "2026-08-27",
-      "stars": 706
+      "stars": 705
     },
     {
       "date": "2026-08-28",
-      "stars": 706
+      "stars": 705
     },
     {
       "date": "2026-08-29",
-      "stars": 706
+      "stars": 705
     },
     {
       "date": "2026-08-30",
-      "stars": 706
+      "stars": 705
     },
     {
       "date": "2026-08-31",
-      "stars": 707
+      "stars": 706
     },
     {
       "date": "2026-09-01",
-      "stars": 707
+      "stars": 706
     },
     {
       "date": "2026-09-02",
-      "stars": 707
+      "stars": 706
     },
     {
       "date": "2026-09-03",
+      "stars": 709
+    },
+    {
+      "date": "2026-09-04",
+      "stars": 709
+    },
+    {
+      "date": "2026-09-05",
       "stars": 710
     }
   ]
