@@ -189,6 +189,7 @@ claude-equity-research/
 │   ├── trading-ideas/            # Plugin directory (installed via marketplace)
 │   │   ├── .claude-plugin/
 │   │   │   └── plugin.json       # Plugin manifest
+│   │   ├── .mcp.json             # Optional You.com MCP search server (keyless)
 │   │   └── commands/
 │   │       └── research.md       # Slash command (invoked as /trading-ideas:research)
 │   └── README.md                 # Command documentation
@@ -238,6 +239,13 @@ Our research framework combines:
 - **News & Sentiment**: Financial media, regulatory announcements
 - **Options Data**: Unusual activity, implied volatility, positioning
 - **Insider Activity**: Form 4 filings, executive transactions
+
+### Optional: You.com MCP Search Server
+
+The plugin ships with a `.mcp.json` that registers a keyless [You.com](https://you.com) web-search MCP server (`youcom-search`). It is entirely opt-in:
+
+- Claude Code will prompt you to approve the bundled MCP server after plugin installation — if you decline (or run the command manually without the plugin), `/trading-ideas:research` falls back to the built-in WebSearch/WebFetch tools and behaves exactly as before.
+- The bundled profile is keyless (`https://api.you.com/mcp?profile=free`), so there is nothing to configure. See [docs/installation.md](docs/installation.md#optional-youcom-mcp-search-server) for the authenticated variant and setup details.
 
 ## Professional Disclaimers
 

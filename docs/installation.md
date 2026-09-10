@@ -51,6 +51,46 @@ claude-code
 /trading-ideas AAPL
 ```
 
+### Optional: You.com MCP Search Server
+
+The plugin directory contains a `.mcp.json` that registers a keyless You.com web-search MCP server:
+
+```json
+{
+  "mcpServers": {
+    "youcom-search": {
+      "type": "http",
+      "url": "https://api.you.com/mcp?profile=free"
+    }
+  }
+}
+```
+
+**Behavior**:
+
+- When the plugin is installed, Claude Code asks you to approve the bundled MCP server. Approve it and `/trading-ideas:research` gains the `you-search` tool for its market-data queries.
+- Decline it, or install the command manually without the plugin, and the command runs exactly as before using the built-in WebSearch/WebFetch tools. No API key is required for the keyless profile.
+
+**Authenticated variant (optional)**:
+
+For You.com's finance research tooling, replace the URL with the authenticated endpoint and add a bearer token header (API keys are available at [you.com/platform/api-keys](https://you.com/platform/api-keys)):
+
+```json
+{
+  "mcpServers": {
+    "youcom-search": {
+      "type": "http",
+      "url": "https://api.you.com/mcp?tools=you-finance",
+      "headers": {
+        "Authorization": "Bearer ${YDC_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+Set `YDC_API_KEY` in your environment; do not commit the key to any file that leaves your machine.
+
 **Expected Output**: Comprehensive equity research report with:
 - Executive Summary with BUY/SELL/HOLD recommendation
 - Fundamental analysis with specific metrics

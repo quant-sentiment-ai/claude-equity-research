@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "youcom-search": {
+      "type": "http",
+      "url": "https://api.you.com/mcp?profile=free"
+    }
+  }
+}
