@@ -79,6 +79,8 @@ Professional equity research and trading analysis powered by Claude AI, deliveri
 /trading-ideas:research NVDA --detailed
 ```
 
+For optional, source-attributed Adanos sentiment context, set `ADANOS_API_KEY` locally and run `/trading-ideas:research AAPL --adanos`. This uses the plugin installation (not the single-file manual install) and Python 3. The standard report remains key-free. Adanos is a commercial API with a free plan; unavailable sources or plan limits do not change the investment rating.
+
 > Claude Code namespaces plugin commands as `<plugin-name>:<command-name>`, so the invocation is `/trading-ideas:research` (not the bare `/trading-ideas`). If you prefer the bare form, use the [manual install](#manual-installation-advanced) below — it copies the command file into your personal `~/.claude/commands/` and registers it as `/trading-ideas`.
 
 > 💡 **Tip**: Restart Claude Code after installation for best results.
