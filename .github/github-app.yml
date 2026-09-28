@@ -1,0 +1,14 @@
+instructions: |
+  This repository publishes a Claude Code plugin for equity research; it is not a
+  deployed application. Keep the plugin command, metadata, and user-facing
+  documentation consistent when changing behavior. The main command is
+  commands/trading-ideas/commands/research.md.
+
+  When editing research guidance or examples, distinguish sourced facts from
+  estimates, avoid inventing current market data, and preserve the educational-use
+  disclaimer and risk language. Do not imply guaranteed returns or individualized
+  investment advice.
+
+  Prefer focused changes that follow the existing Markdown, YAML, and plugin
+  metadata conventions. Check related documentation and manifests for consistency,
+  and run relevant validation when the repository provides it.
