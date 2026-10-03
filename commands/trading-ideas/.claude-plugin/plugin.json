@@ -1,5 +1,5 @@
 {
   "name": "trading-ideas",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Institutional-grade equity research reports via /trading-ideas:research command."
 }
