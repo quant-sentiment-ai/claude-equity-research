@@ -1,9 +1,9 @@
 {
   "repo": "quant-sentiment-ai/claude-equity-research",
   "generated_from": "GET /repos/{owner}/{repo}/stargazers (collaborator access)",
-  "total": 762,
+  "total": 763,
   "first_star": "2025-09-10T18:30:33Z",
-  "last_star": "2026-11-21T12:09:57Z",
+  "last_star": "2026-11-21T23:20:02Z",
   "series": [
     {
       "date": "2025-09-10",
@@ -1755,7 +1755,7 @@
     },
     {
       "date": "2026-11-21",
-      "stars": 762
+      "stars": 763
     }
   ]
 }
